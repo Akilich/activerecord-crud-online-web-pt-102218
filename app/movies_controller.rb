@@ -90,7 +90,7 @@ end
 def can_destroy_a_single_item
   Movie.create(title: "That One Where the Guy Kicks Another Guy Once")
   __
-  __
+  Movie.destroy
 end
 
 def can_destroy_all_items_at_once
@@ -98,5 +98,5 @@ def can_destroy_all_items_at_once
     Movie.create(title: "Movie_#{i}")
   end
   Movie.all.each do |movie|
-    movie.destroy
+    Movie.destroy
 end
