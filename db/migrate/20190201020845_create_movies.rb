@@ -1,6 +1,6 @@
 class CreateMovies < ActiveRecord::Migration[5.2]
   def change
-    column_name
+    add_column
     
   end
 end
